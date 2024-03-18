@@ -20,4 +20,4 @@ RUN yarn
 RUN yarn build
 
 # Define the entrypoint command
-CMD yarn start
+CMD medusa migrations run && yarn start
