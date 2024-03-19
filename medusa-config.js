@@ -46,9 +46,18 @@ const plugins = [
     resolve: "@medusajs/admin",
     /** @type {import('@medusajs/admin').PluginOptions} */
     options: {
+      serve: true,
       autoRebuild: true,
+      backend: "https://medusa-easypanel-medusa-server.zelic3.easypanel.host",
+      path: "/admin",
+      outDir: "build",
       develop: {
-        open: process.env.OPEN_BROWSER !== "false",
+        open: true,
+        port: 7001,
+        logLevel: "error",
+        stats: "normal",
+        allowedHosts: "auto",
+        webSocketURL: undefined,
       },
     },
   },
