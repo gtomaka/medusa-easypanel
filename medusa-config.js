@@ -74,7 +74,7 @@ const projectConfig = {
   cookieSecret: process.env.COOKIE_SECRET,
   store_cors: STORE_CORS,
   database_url: DATABASE_URL,
-  admin_cors: "http://localhost:7002",
+  admin_cors: "/http:\\/\\/localhost:700\\d+$/",
   // Uncomment the following lines to enable REDIS
   redis_url: REDIS_URL
 };
