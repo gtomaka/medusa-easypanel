@@ -49,7 +49,7 @@ const plugins = [
       serve: true,
       autoRebuild: true,
       backend: "https://medusa-easypanel-medusa-server.zelic3.easypanel.host",
-      path: "/admin",
+      path: "/admin-app",
       outDir: "build",
       develop: {
         open: true,
